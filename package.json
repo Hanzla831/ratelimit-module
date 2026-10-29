@@ -1,0 +1,26 @@
+{
+  "name": "ratelimit-module",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "description": "Rate limiting & throttling: token bucket and sliding window algorithms, tiered quotas, cost-weighted requests, distributed counter store, draft-7 headers and fail-open/closed policy.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.3.0",
+    "supertest": "^7.1.4",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}
